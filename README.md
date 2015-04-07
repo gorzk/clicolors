@@ -48,6 +48,8 @@ from clicolors import colors
 
 ```python
 # clicolors Demo
+    from clicolors import colors, COLORS, ATTRIBUTES
+
     print colors('clicolors : Lightweight Python script for styling strings in your Linux terminal',fg='black',bg='white',attr='underline')
     print ('Foreground: '+' '.join([colors(color, fg=color) for color in COLORS]))
     print ('Background: '+' '.join([colors(color, bg=color) for color in COLORS]))
