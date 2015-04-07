@@ -1,6 +1,6 @@
-#clicolors - Command Line Interface - Colors
-##Simply Python module to colorize your Linux terminal. 
-
+##clicolors - Command Line Interface - Colors
+###Simply Python module to colorize your Linux terminal. 
+---
 Usage:
 ```python
 from clicolors import colors
