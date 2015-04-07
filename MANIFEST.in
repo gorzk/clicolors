@@ -1,0 +1,2 @@
+include *.txt
+recurcive-include examples *
