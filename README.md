@@ -45,3 +45,8 @@ from clicolors import colors
     print ('Background: '+' '.join([colors(color, bg=color) for color in COLORS]))
     print ('Attributes: '+' '.join([colors(attributes, attr=attributes) for attributes in ATTRIBUTES]))
 ```
+
+
+![alt text][1]
+
+[1]: /images/example1.jpg "Title"
