@@ -1,4 +1,4 @@
-##clicolors - Command Line Interface - Colors
+##clicolors - Command Line Interface::Colors
 ###Simply Python module to colorize your Linux terminal. 
 ---
 Usage:
@@ -37,4 +37,11 @@ from clicolors import colors
 ```python
 # example 7
     print colors('Example text 6',bg='cyan',attr='underline',fg='black')
+```
+```python
+# clicolors Demo
+    print colors('clicolors : Lightweight Python script for styling strings in your Linux terminal',fg='black',bg='white',attr='underline')
+    print ('Foreground: '+' '.join([colors(color, fg=color) for color in COLORS]))
+    print ('Background: '+' '.join([colors(color, bg=color) for color in COLORS]))
+    print ('Attributes: '+' '.join([colors(attributes, attr=attributes) for attributes in ATTRIBUTES]))
 ```
