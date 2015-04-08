@@ -1,4 +1,4 @@
-#!/usr/bin/env python
+#!/usr/bin/env python3
 
 # Copyright (c) 2014-2015 Krzysztof Gorzynski <gorzynskikrzysztof@gmail.com>
 #
@@ -14,8 +14,9 @@
 # ACTION OF CONTRACT, NEGLIGENCE OR OTHER TORTIOUS ACTION, ARISING OUT OF
 # OR IN CONNECTION WITH THE USE OR PERFORMANCE OF THIS SOFTWARE.
 
-
 __version__ = '0.1'
+
+__all__ = ["colorize", "demo"]
 
 # General text attributes
 ANSI = "\033["
@@ -25,7 +26,8 @@ ATTRIBUTES = ('default', 'bold', 'italic', 'dim', 'underline', 'blink', 'reverse
 # Fore and background attributes
 COLORS = ('black', 'red', 'green', 'yellow', 'blue', 'magenta', 'cyan', 'white', 'default')
 
-def colors(text, fg=None, bg=None, attr=None):
+
+def colorize(text, fg=None, bg=None, attr=None):
     if fg:
         if fg in COLORS:
             fore = str(30+COLORS.index(fg))
@@ -43,11 +45,10 @@ def colors(text, fg=None, bg=None, attr=None):
     return str(ANSI+ ''.join(fore+';'+back+';'+style)+'m')+text+ANSI_RESET
 
 def demo():
-    print colors('clicolors : a simple python script for styling strings in the terminal',fg='black',bg='white',attr='underline')
-    print ('Foreground: '+' '.join([colors(color, fg=color) for color in COLORS]))
-    print ('Background: '+' '.join([colors(color, bg=color) for color in COLORS]))
-    print ('Attributes: '+' '.join([colors(attributes, attr=attributes) for attributes in ATTRIBUTES]))
+    print colorize('clicolors : A simple python script for styling strings in the terminal',fg='black',bg='white',attr='underline')
+    print ('Foreground: '+' '.join([colorize(color, fg=color) for color in COLORS]))
+    print ('Background: '+' '.join([colorize(color, bg=color) for color in COLORS]))
+    print ('Attributes: '+' '.join([colorize(attributes, attr=attributes) for attributes in ATTRIBUTES]))
 
 if __name__=='__main__':
     demo()
-

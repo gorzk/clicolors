@@ -1,3 +1,4 @@
-include *.txt
-include *.in
-recurcive-include examples *
+include *.md
+include *.cfg
+include examples/usecases.py
+
