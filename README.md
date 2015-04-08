@@ -3,57 +3,57 @@
 
 Usage:
 ```python
-from clicolors import colors
+from clicolors import colorize
 
 # example 1
-    print colors('Example text 1', fg='blue',bg='red',attr='bold')
+print colorize('Example text 1', fg='blue',bg='red',attr='bold')
 ```
 ![alt text][1]
 
 ```python
 # example 2
-    print colors('Example text 2', 'blue','red','bold')
+print colorize('Example text 2', 'blue','red','bold')
 ```
 ![alt text][2]
 
 ```python
 # example 3
-    print colors('Example text 3', fg='yellow')
+print colorize('Example text 3', fg='yellow')
 ```
 ![alt text][3]
 
 ```python
 # example 4
-    print colors('Example text 4', 'yellow')
+print colorize('Example text 4', 'yellow')
 ```
 ![alt text][4]
 
 ```python
 # example 5
-    print colors('Example text 5', bg='green')
+print colorize('Example text 5', bg='green')
 ```
 ![alt text][5]
 
 ```python
 # example 6
-    print colors('Example text 6',attr='underline')
+print colorize('Example text 6',attr='underline')
 ```
 ![alt text][6]
 
 ```python
 # example 7
-    print colors('Example text 6',bg='cyan',attr='underline',fg='black')
+print colorize('Example text 6',bg='cyan',attr='underline',fg='black')
 ```
 ![alt text][7]
 
 ```python
 # clicolors Demo
-    from clicolors import colors, COLORS, ATTRIBUTES
+from clicolors import colorize, COLORS, ATTRIBUTES
 
-    print colors('clicolors : Lightweight Python script for styling strings in your Linux terminal',fg='black',bg='white',attr='underline')
-    print ('Foreground: '+' '.join([colors(color, fg=color) for color in COLORS]))
-    print ('Background: '+' '.join([colors(color, bg=color) for color in COLORS]))
-    print ('Attributes: '+' '.join([colors(attributes, attr=attributes) for attributes in ATTRIBUTES]))
+print colors('clicolors : Lightweight Python script for styling strings in your Linux terminal',fg='black',bg='white',attr='underline')
+print ('Foreground: '+' '.join([colorize(color, fg=color) for color in COLORS]))
+print ('Background: '+' '.join([colorize(color, bg=color) for color in COLORS]))
+print ('Attributes: '+' '.join([colorize(attributes, attr=attributes) for attributes in ATTRIBUTES]))
 ```
 ![alt text][8]
 
