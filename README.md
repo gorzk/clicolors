@@ -50,7 +50,7 @@ print colorize('Example text 6',bg='cyan',attr='underline',fg='black')
 # clicolors Demo
 from clicolors import colorize, COLORS, ATTRIBUTES
 
-print colors('clicolors : Lightweight Python script for styling strings in your Linux terminal',fg='black',bg='white',attr='underline')
+print colorize('clicolors : Lightweight Python script for styling strings in your Linux terminal',fg='black',bg='white',attr='underline')
 print ('Foreground: '+' '.join([colorize(color, fg=color) for color in COLORS]))
 print ('Background: '+' '.join([colorize(color, bg=color) for color in COLORS]))
 print ('Attributes: '+' '.join([colorize(attributes, attr=attributes) for attributes in ATTRIBUTES]))
