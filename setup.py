@@ -7,5 +7,5 @@ setup(name = 'clicolors',
         author_email = 'gorzynskikrzysztof@gmail.com',
         url = 'https://github.com/gorzk/clicolors.git',
         license = 'MIT',
-        packages = ['clicolors'],
+        packages= ['clicolors']
         )

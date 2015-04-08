@@ -1,1 +1,2 @@
-from clicolors import colors, COLORS, ATTRIBUTES
+from clicolors import colorize, demo, COLORS, ATTRIBUTES
+import clicolors
